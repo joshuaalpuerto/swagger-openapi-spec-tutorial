@@ -45,6 +45,9 @@ paths:
       responses:
         200:
           description: "Successfully Added"
+          schema:
+            items:
+              $ref: "#/definitions/Todo"
       x-swagger-router-controller: "AddTodo"
   /todo/{id}:
     get:
@@ -81,7 +84,7 @@ paths:
       responses:
         204:
           description: "deleted todo"
-      x-swagger-router-controller: "FindTodoById"
+      x-swagger-router-controller: "DeleteTodoById"
     put:
       description: "This endpoint will update todo"
       operationId: "UpdateTodoById"
