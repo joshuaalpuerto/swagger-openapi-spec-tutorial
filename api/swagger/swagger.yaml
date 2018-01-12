@@ -68,6 +68,8 @@ paths:
           schema:
             items:
               $ref: "#/definitions/Todo"
+        204:
+          description: "Not found"
       x-swagger-router-controller: "FindTodoById"
     delete:
       description: "This endpoint will delete todo"
