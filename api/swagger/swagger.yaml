@@ -84,8 +84,8 @@ paths:
         type: "integer"
         format: "int64"
       responses:
-        204:
-          description: "deleted todo"
+        200:
+          description: "Todo deleted"
       x-swagger-router-controller: "DeleteTodoById"
     put:
       description: "This endpoint will update todo"
