@@ -13,6 +13,8 @@
     "swagger-express-mw": "^0.1.0"
   },
   "devDependencies": {
+    "npm-check-updates": "2.14.2",
+    "npx": "10.2.0",
     "should": "^7.1.0",
     "supertest": "^1.0.0"
   },
